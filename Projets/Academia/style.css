@@ -1,0 +1,121 @@
+/*? Ao usar o "display: flex" liberamos a propriedade de "Gap:" que server par dar espaçamentos, ente elementos menos nas suas extremidades */
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(227, 255, 248, 0.38) 100%);
+  height: 100vh;
+}
+
+#page {
+  padding: 65px;
+  margin: 0 auto 0;
+  width: 1000px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+a {
+  
+  color: #1F1534;
+  text-decoration: none;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li :hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  color: black;
+}
+
+h1 span {
+  color: #89C5CC;
+}
+
+section p {
+
+  margin: 40px 0;
+
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Mulish', sans-serif;
+
+  background: #69B99D;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 32px;
+  gap: 10px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+button:hover {
+   background: #4a997d;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+footer {
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a :hover {
+  font-weight: bold;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

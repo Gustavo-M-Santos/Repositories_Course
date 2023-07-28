@@ -1,0 +1,51 @@
+/* TODO 1. `box-sizing: border-box;` Com essa propriedade, o tamanho total de um elemento inclui bordas e preenchimentos, sem expandir seu tamanho original. */
+/* TODO 2. `-webkit-font-smoothing: antialiased;`: Melhora a aparência do texto em navegadores como Safari e antigo Chrome, tornando as bordas das fontes mais suaves e nítidas. */
+
+/* TODO 3. `-moz-osx-font-smoothing: grayscale;`: Melhora a aparência do texto em navegadores como Firefox, tornando as bordas das fontes mais suaves, resultando em um texto mais limpo e legível. */
+
+/* TODO :root {font-size: 62.5%;} Essa propriedade é para podermos usar medidas que se adaptam, Trocando PIXEL po REM sendo flexível para os navegadores */
+
+/* TODO 62.5% equivale á 10px */
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  color: #A54328;
+  font-size: 1.4rem;
+}
+
+button {
+  color: #FFF;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+
+
+  padding: .6rem 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #A54328;
+  margin-top: 3.8rem;
+}
+
+button:hover {
+  background-color: #783422;
+}
