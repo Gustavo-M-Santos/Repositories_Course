@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #373737;
+    margin-top: 50px;
+    padding: 0;
+}
+
+
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(101, 0, 163);
+    color: #ffffff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #333333;
+}
