@@ -21,7 +21,7 @@ nav {
 nav p {
   font-size:2.4em ;
   line-height: 3.2rem;
-  letter-spacing:5px;
+  letter-spacing:.5rem;
 
   text-transform: uppercase;
   color: #fff;
@@ -38,7 +38,6 @@ nav ul li {
 
 nav ul li a {
   color: #5DBF4E;
-  color: ;
   text-decoration: none;
 
   font-size: 1.2rem;
@@ -50,9 +49,15 @@ nav ul li a:hover {
   color: #498C3F;
 }
 
-#page {
-  height: 100vh;
+#hero {
+  height: 90vh;
+  margin: auto;
+  background-color: red;
+}
 
+
+#area_gallry {
+  height: 100vh;
 }
 
 .gallery {
@@ -70,7 +75,7 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(101, 0, 163);
+    background-color: #5DBF4E;
     color: #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
