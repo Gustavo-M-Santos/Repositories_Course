@@ -13,3 +13,6 @@ Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocket
 - GitHub
 - Node.js
 
+## Index primario.
+
+Nesse primeiro index está um site que está em processo de desenvolvimento. Nele estarei colocando dodos os fundamentos que aprendi no curso. desde o Frnt-ende até o Back-ende.
