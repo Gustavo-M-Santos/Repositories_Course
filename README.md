@@ -1,7 +1,7 @@
 
 # Repositorio de Curso
 
-Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocketseat's. No curso estudo os fundamentos do Front-End e Back-End, até os tópicos avançados.
+Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocketseat's. No curso estudo os fundamentos do Front-End e Back-End, até os tópicos avançadosque um Dev Full-Stack deve aprender.
 
 ## 🛠 Tecnologias que estão emvolvidas
 
