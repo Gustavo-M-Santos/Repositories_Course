@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #373737;
+    background-color: rgb(20, 20, 20);
 }
 
 nav {
@@ -15,7 +15,7 @@ nav {
   align-items: center;
 
   padding: 1rem 3rem ;
-  background-color: #0D0D0D;
+  background-color: #061A26;
 }
 
 nav p {
@@ -52,7 +52,26 @@ nav ul li a:hover {
 #hero {
   height: 90vh;
   margin: auto;
+  background-color: #2e2e2e;
+
+  display: flex;
+  justify-content: space-between;
+  place-items: center ;
+  padding: 0 3rem;
+}
+
+
+.presentation {
+  width: 300px;
+  text-align:right
+
+}
+
+.img {
+  width:  400px;
+  height: 400px;
   background-color: red;
+  border-radius: 200px;
 }
 
 
@@ -75,12 +94,12 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #5DBF4E;
+    background-color: #50F2F2;
     color: #ffffff;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #333333;
+    background-color: #41D9D9;
 }
