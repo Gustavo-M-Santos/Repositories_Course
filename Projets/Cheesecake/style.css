@@ -1,12 +1,3 @@
-/* TODO 1. `box-sizing: border-box;` Com essa propriedade, o tamanho total de um elemento inclui bordas e preenchimentos, sem expandir seu tamanho original. */
-/* TODO 2. `-webkit-font-smoothing: antialiased;`: Melhora a aparência do texto em navegadores como Safari e antigo Chrome, tornando as bordas das fontes mais suaves e nítidas. */
-
-/* TODO 3. `-moz-osx-font-smoothing: grayscale;`: Melhora a aparência do texto em navegadores como Firefox, tornando as bordas das fontes mais suaves, resultando em um texto mais limpo e legível. */
-
-/* TODO :root {font-size: 62.5%;} Essa propriedade é para podermos usar medidas que se adaptam, Trocando PIXEL po REM sendo flexível para os navegadores */
-
-/* TODO 62.5% equivale á 10px */
-
 * {
   padding: 0;
   margin: 0;
@@ -26,6 +17,44 @@ body {
   font-size: 1.4rem;
 }
 
+main {
+  max-width: 32rem;
+
+  margin-inline: auto;
+
+  padding: 5.6rem 4rem;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  margin-block: 3.2rem;
+}
+
+h1, h2 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
+h2 {
+  margin: 2.4rem 0;
+}
+
+p, li, strong {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+ul, ol {
+  padding-left: 2.4rem;
+}
+
+ul {
+  margin-bottom: 2.4rem ;
+}
+
 button {
   color: #FFF;
   font-size: 1.4rem;
@@ -43,9 +72,45 @@ button {
   border-radius: 8px;
 
   background-color: #A54328;
-  margin-top: 3.8rem;
+  margin-top: 3.2rem;
 }
 
 button:hover {
   background-color: #783422;
 }
+
+
+@media (min-width: 770px) {
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    gap:16rem;
+
+    padding: 6rem 4rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  h1, h2 {
+    font-size: 2.6rem;
+    line-height: 5rem;
+  }
+
+  p, li, strong {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
