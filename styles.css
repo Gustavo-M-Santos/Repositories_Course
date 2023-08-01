@@ -24,7 +24,7 @@ nav p {
   letter-spacing:.5rem;
 
   text-transform: uppercase;
-  color: #fff;
+  color: #50F2F2;
 }
 
 nav ul {
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #5DBF4E;
+  color: #50F2F2;
   text-decoration: none;
 
   font-size: 1.2rem;
@@ -46,7 +46,7 @@ nav ul li a {
 
 nav ul li a:hover {
   font-weight: bold;
-  color: #498C3F;
+  color: #41D9D9;
 }
 
 #hero {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 .img {
   width:  400px;
   height: 400px;
-  background-color: red;
+  background-color: #50F2F2;
   border-radius: 200px;
 }
 
