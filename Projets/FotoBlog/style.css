@@ -2,8 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
   font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#app > * {
+  border: 1px solid red;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content ;
+  height: 100vh;
+}
+
+main {
+  background-color: lightskyblue;
+  overflow-y: scroll;
+}
+
+.conteiner {
+  padding: 1.6rem 3.2rem;
+  width: min(112rem, 100%);
+  margin: 0 auto;
 }
