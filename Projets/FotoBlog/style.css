@@ -117,6 +117,12 @@ main h1 {
   gap: 2.2rem;
 }
 
+.item {
+  background-color: var(--color-base-white);
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
 .item img {
   width: 100%;
 
@@ -124,8 +130,28 @@ main h1 {
   object-fit: cover;
 }
 
+.details {
+  padding: 2.2rem;
+}
 
+.tags {
+  margin-top: 1.6rem;
 
+}
+
+.tags h2 {
+  font-size: 1.8rem;
+}
+
+.tags span {
+  padding: .6rem;
+  background-color: var(--color-base-gray-100);
+  border-radius: .6rem;
+
+  line-height: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
 
 
 
