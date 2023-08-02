@@ -1,148 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fotoblog</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="app">
-      <header class="container">
-        <nav>
-          <img src="./img/cam.svg" alt="Imagem da logomarca" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-          <ul>
-            <li>Home</li>
-            <li class="active">Galeria</li>
-          </ul>
-        </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FotoBlog</title>
 
-        <form>
-          <div class="input-wrapper">
-            <label for="search">Pesquise por imagens e coleções</label>
-            <input id="search" type="text" placeholder="Pesquise por imagens e coleções" >
-          </div>
-        </form>
+</head>
 
-        <img
-          class="avatar"
-          src="https://randomuser.me/api/portraits/women/5.jpg"
-          alt="Imagem de uma mulher"
-        />
-      </header>
+<body>
+  <div id="app">
 
-      <main>
-        <div class="container">
-          <h1>Galeria</h1>
+    <header class="conteiner">
 
-          <section class="gallery">
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?a=1" alt="" />
-              <figcaption class="details">
-                <h2>Workspace elétrica</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
+      <nav>
+        <img src="img/cam.svg" alt="imagem da logomarca">
 
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?b=1" alt="" />
-              <figcaption class="details">
-                <h2>Dark and red</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Galeria</a></li>
+        </ul>
 
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?c=1" alt="" />
-              <figcaption class="details">
-                <h2>Organização e grids</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
+      </nav>
 
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?d=1" alt="" />
-              <figcaption class="details">
-                <h2>Colméia</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?e=1" alt="" />
-              <figcaption class="details">
-                <h2>Setup de escritor</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?f=1" alt="" />
-              <figcaption class="details">
-                <h2>Ergonomia e cores</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?g=1" alt="" />
-              <figcaption class="details">
-                <h2>Ergonomia e cores</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?h=1" alt="" />
-              <figcaption class="details">
-                <h2>Ergonomia e cores</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="item">
-              <img src="https://source.unsplash.com/random?i=1" alt="" />
-              <figcaption class="details">
-                <h2>Ergonomia e cores</h2>
-                <div class="tags">
-                  <span>tag</span>
-                </div>
-              </figcaption>
-            </figure>
-
-          </section>
+      <form action="">
+        <div class="input-wrapper">
+          <label for="search">Pesquise por imagens e coleções</label>
+          <input id="search" type="text" placeholder="Pesquise por imagens e coleções">
         </div>
-      </main>
+      </form>
 
-      <footer class="container">
-        <p>© 2023 - Rocketseat Explorer</p>
-      </footer>
-    </div>
-  </body>
+      <img id="avatar" src="./img/Jojo.png" alt="avatar user">
+
+    </header>
+
+    <main>
+      <div class="conteiner">
+        <h1>Gallery</h1>
+
+        <section class="gallery">
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?a=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?b=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?c=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?d=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?e=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?f=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?g=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?h=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+          <figure class="item">
+            <img src="https://source.unsplash.com/random?i=1" alt="">
+
+            <figcaption class="details">
+              <h2>Lorem, ipsum.</h2>
+
+              <div class="tags">
+                <span>tag</span>
+              </div>
+            </figcaption>c
+          </figure>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="conteiner">
+      <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
+
+  </div>
+</body>
+
 </html>
