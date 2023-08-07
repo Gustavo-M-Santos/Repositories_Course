@@ -17,8 +17,10 @@
   --color-base-gray-900: #202024;
 }
 
-html, body, input {
-    font-family: 'Mulish', sans-serif;
+html,
+body,
+input {
+  font-family: 'Mulish', sans-serif;
 }
 
 body {
@@ -59,7 +61,7 @@ nav ul li a {
   list-style: none;
 
   font-size: 1.8rem;
-  line-height:2.4rem ;
+  line-height: 2.4rem;
   font-weight: 700;
 
   color: var(--color-base-gray-300);
@@ -110,7 +112,7 @@ main h1 {
 }
 
 .gallery {
-  margin-top: 3.6rem ;
+  margin-top: 3.6rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -133,7 +135,9 @@ main h1 {
   transition-duration: 5s;
   transition-delay: ease-in-out; */
 
-  transition: all 500ms ease-in-out ;
+  transition: all 500ms ease-in-out;
+
+  display: block;
 }
 
 .item img:hover {
@@ -165,13 +169,6 @@ main h1 {
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
 footer p {
   color: var(--color-base-gray-300);
   font-size: 1.6rem;
@@ -180,4 +177,38 @@ footer p {
 
   text-align: center;
   padding: 1.6rem;
+}
+
+/*TODOs animation */
+
+header {
+  --starY: -100%;
+  animation: move .5s;
+}
+
+footer {
+  --starY: 100%;
+  animation: move .5s;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(var(--starY));
+  }
+}
+
+.item {
+  --delay:.4s;
+ animation: apper .4s var(--delay) backwards;
+}
+
+@keyframes apper {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
