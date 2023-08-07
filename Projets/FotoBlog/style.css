@@ -125,9 +125,21 @@ main h1 {
 
 .item img {
   width: 100%;
-
   aspect-ratio: 16/9;
   object-fit: cover;
+
+  /* transition-property:filter, transform ;
+  transition-property:all;
+  transition-duration: 5s;
+  transition-delay: ease-in-out; */
+
+  transition: all 500ms ease-in-out ;
+}
+
+.item img:hover {
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1) rotate(-2deg);
+
 }
 
 .details {
