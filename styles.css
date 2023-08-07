@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
 }
 
 nav {
@@ -95,7 +95,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     background-color: #50F2F2;
-    color: #ffffff;
+    color: #141414;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
