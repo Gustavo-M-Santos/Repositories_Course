@@ -9,4 +9,102 @@
 
 :root {
   font-size: 62.5%;
+
+  --color-base-black-text100: #202024;
+  --color-base-black-text200: #121214;
+  --color-base-blue-100: #065E7C;
+
+  --color-base-white-100: #FFF;
+}
+
+html,
+body,
+input {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-base-black-text100);
+  background-color: var(--color-base-blue-100);
+
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr ;
+  height: 100vh;
+}
+
+.conteiner {
+  padding: 1.2rem 2.2rem;
+  width: min(102rem, 100%);
+  margin: 0 auto;
+}
+
+header,
+nav,
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+nav ul,
+ul a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-base-white-100);
+
+  font-weight: 600;
+}
+
+nav a:hover {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  border: none;
+  padding: 1.4rem 1.2rem;
+  width: 100%;
+
+  border-radius: 8px;
+
+  opacity: .5;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--color-base-black-text200);
+}
+header #avatar {
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+main {
+background-color: var(--color-base-white-100);;
+}
+footer {
+  width: 100%;
+  background-color: var(--color-base-blue-100);
+
+  text-align: center;
+  color: var(--color-base-white-100);
 }
