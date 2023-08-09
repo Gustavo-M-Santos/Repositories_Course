@@ -13,6 +13,7 @@
   --color-base-black-text100: #202024;
   --color-base-black-text200: #121214;
   --color-base-blue-100: #065E7C;
+  --color-base-blue-200: #05475d;
 
   --color-base-white-100: #FFF;
 }
@@ -32,13 +33,13 @@ body {
 
 #app {
   display: grid;
-  grid-template-rows: max-content 1fr ;
+  grid-template-rows: max-content 1fr;
   height: 100vh;
 }
 
 .conteiner {
   padding: 1.2rem 2.2rem;
-  width: min(102rem, 100%);
+  width: max(43rem, 100%);
   margin: 0 auto;
 }
 
@@ -90,6 +91,7 @@ header form {
 .input-wrapper input::placeholder {
   color: var(--color-base-black-text200);
 }
+
 header #avatar {
   height: 4.2rem;
   width: 4.2rem;
@@ -99,8 +101,54 @@ header #avatar {
 }
 
 main {
-background-color: var(--color-base-white-100);;
+  background-color: var(--color-base-white-100);
 }
+
+main div {
+  width: min(100%, 600px);
+}
+#hero {
+  width: min(100%, 80rem);
+  border-radius: .8rem;
+}
+main h1 {
+  margin-top: 3.2rem ;
+}
+
+.colluns-2 {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+
+  margin:3.2rem 0;
+}
+
+.colluns-2 button {
+  display: flex;
+
+  padding: 1.2rem;
+  background-color: var(--color-base-blue-100);
+  border: none;
+  border-radius: 50%;
+}
+
+.colluns-2 button:hover {
+  background-color: var(--color-base-blue-200);
+}
+
+.colluns-2 button img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main section p {
+  color: var(--color-base-black-text100);
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 3.2rem;
+}
+
 footer {
   width: 100%;
   background-color: var(--color-base-blue-100);
