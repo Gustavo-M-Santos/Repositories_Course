@@ -1,36 +1,40 @@
-let option;
-let items = []
+
+let index = 1
+const patients = [
+  {
+    name: "Luiz",
+    age: 20,
+    weight: 100,
+    height: 190,
+  },
+  {
+    name: "Alexandra",
+    age: 27,
+    weight: 70,
+    height: 170,
+  },
+  {
+    name: "Carlos",
+    age: 42,
+    weight: 90,
+    height: 180,
+  },
+]
+
+let patientsNames = []
+let patientWeight = []
+
+function calcIMC(weight, height) {
+  return ((weight) / ((height / 100)**2)).toFixed(2)
+}
 
 
+for(let patient of patients) {
+  patientsNames.push(alert(`Paciente ${index++}:
+  Nome: ${patient.name}
+  Idade: ${patient.age}
+  Peso: ${patient.weight} kg
+  Altura: ${patient.height} cm
+  IMC: ${calcIMC(patient.weight, patient.height)}`))
 
-
-
-while (option != 3) {
-  option =  Number(prompt(`
-    Olá usuário! Digite o número da opção desejada
-
-    1. Cadastrar um item na lista
-    2. Mostrar itens cadastrados
-    3. Sair do programa
-  `))
-
-  switch (option) {
-    case 1:
-      let item = prompt('Digite o nome do item')
-      items.push(item)
-      break;
-    case 2:
-      if(items.length == 0){
-        alert('Não existe  itens cadastrados')
-      }else{
-        alert(items)
-      }
-    case 3:
-    alert('Programa encerado')
-      break;
-    default:
-      alert('Selecione uma opção valida: 1,2 ou 3')
-  }
-
-  console.log(option, items);
 }
