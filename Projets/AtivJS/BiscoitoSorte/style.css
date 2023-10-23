@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-bs-blue-100: #190361;
+  --color-bs-purple-100: #BB00FF;
+  --color-bs-orange-100: #FF9500;
+  --color-bs-white-100: #FFF;
+  --color-bs-black-100: #000;
+
+}
+
+body,
+button,
+input {
+  font-family: "DM sans", "sans-serif";
+}
