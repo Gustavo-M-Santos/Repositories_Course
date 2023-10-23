@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text-blue-100: #34355B;
+  --color-bg-purple-100: #7879F1;
+  --color-bg-purple-200: #6666d2;
+  --color-bg-gray-100: #DCE2E9
+}
+
+body,
+button,
+input {
+  font-family: "DM sans", "sans-serif";
+}
+
+body {
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+main {
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px .2rem .4rem .0rem rgba(0, 0, 0, 0.10);
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+h1 {
+  color: var(--color-text-blue-100);
+  font-family: "Montserrat", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-bottom: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  background: var(--color-bg-purple-100);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  border: none;
+  padding: 1.6rem;
+  border-radius: .4rem ;
+
+  cursor: pointer;
+  transition: background .5s;
+}
+
+a:hover {
+  background-color: var(--color-bg-purple-200);
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
