@@ -36,6 +36,16 @@ input {
   display: none;
 }
 
+h1 {
+  color: var(--color-bs-blue-100);
+  font-family: 'Montserrat', "DM sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+
+/*? screenOne */
 #screenOne {
   width: 48.2rem;
 
@@ -52,13 +62,6 @@ input {
 
 }
 
-h1 {
-  color: var(--color-bs-blue-100);
-  font-family: 'Montserrat', "DM sans", "sans-serif";
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.8rem;
-}
 
 
 #screenOne p {
@@ -88,19 +91,19 @@ h1 {
   }
 
   10% {
-    transform: translate(-5px, -5px);
+    transform: translate(-.4rem, -.4rem);
   }
 
   20% {
-    transform: translate(5px, 5px);
+    transform: translate(.4rem, .4rem);
   }
 
   30% {
-    transform: translate(-5px, 5px);
+    transform: translate(-.4rem, .4rem);
   }
 
   40% {
-    transform: translate(5px, -5px);
+    transform: translate(.4rem, -.4rem);
   }
 
   50% {
@@ -108,18 +111,18 @@ h1 {
   }
 
   60% {
-    transform: translate(-5px, -5px);
+    transform: translate(-.4rem, -.4rem);
   }
 
   70% {
-    transform: translate(5px, 5px);
+    transform: translate(.4rem, .4rem);
   }
 
   80% {
-    transform: translate(-5px, 5px);
+    transform: translate(-.4rem, .4rem);
   }
 
   90% {
-    transform: translate(5px, -5px);
+    transform: translate(.4rem, -.4rem);
   }
 }
