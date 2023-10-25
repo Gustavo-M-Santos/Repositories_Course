@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="./style.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+    rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +17,23 @@
 
 <body>
   <main>
-    <main>
-      <div id="screenOne">
+      <div id="screenOne" class="">
         <h1>Qual é a sua sorte de <br> hoje?</h1>
         <p>Abra o biscoito e descubra!</p>
-        <img id="closeBiscuit" class="swing" src="./svg/closeBiscuit.svg" alt="Um biscoito da sorte fechado">
+        <img onclick="handleTryClick(event)" is="bntTry" id="closeBiscuit" class="swing" src="./svg/closeBiscuit.svg" alt="Um biscoito da sorte fechado">
 
       </div>
-      <div id="screenTwo"></div>
-    </main>
+
+      <div id="screenTwo" class="hide">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <div>
+          <p>
+            "O silêncio é um amigo que nunca trai, revelando verdades profundas e sutis." </p>
+          <img src="svg/openBiscuit.svg" alt="Biscoito da sorte aberto">
+          <button onclick="handleResetClick()" id="btnReset">Abrir outro biscoito </button>
+
+        </div>
+      </div>
   </main>
 
   <script src="./script.js"></script>
