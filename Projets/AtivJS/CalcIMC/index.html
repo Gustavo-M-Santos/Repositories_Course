@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <link rel="stylesheet" href="./style.css">
@@ -11,12 +11,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de IMC</title>
+
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
 
+  <div class="alert-error ">Digite apenas números</div>
 
-  <script src="./main.js"></script>
+  <div class="conteiner">
+    <div id="screenOne" class="card">
+      <h1>Calcule seu IMC</h1>
+
+      <form>
+        <div class="input-wrapper">
+
+          <label for="event-height">
+            <span>Altura (cm)</span>
+          </label>
+          <input type="text" placeholder="195" id="event-height">
+
+        </div>
+
+        <div class="input-wrapper">
+
+          <label for="event-weight">
+            <span>Peso (kg)</span>
+          </label>
+          <input type="text" placeholder="96" id="event-weight">
+
+        </div>
+
+        <button>Calcular IMC
+          <img src="./svg/arrow.svg" alt="">
+        </button>
+      </form>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card" style="border-radius: .8rem;">
+        <button class="close"><img src="./svg/closeIcon.svg" alt=""></button>
+        <h2>Seu IMC é de </h2>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
