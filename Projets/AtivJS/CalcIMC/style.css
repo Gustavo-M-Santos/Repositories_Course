@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text-black-100:#21252994;
+  --color-text-black-200:#212529;
+  --color-text-blue-100:#0C3440;
+  --color-text-green-300:#00453A;
+  --color-bg-blue-100:#02799D;
+  --color-bg-blue-200:#004c63;
+  --color-bg-blue-300:#040924;
+  --color-bg-red-100:#F03E3E;
+  --color-base-white:#e4e4e4;
+}
+
+body {
+  background: var(--color-bg-blue-300);
+}
+
+html,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+
