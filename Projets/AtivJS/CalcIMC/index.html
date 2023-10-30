@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- scripts-->
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" type="module" defer></script>
 </head>
 <body>
 
@@ -28,13 +28,6 @@
         <main class="card">
             <form>
                 <h1 class="title">Cálculo de IMC</h1>
-                <div class="input-wrapper">
-                    <label for="weight">Peso (kg)</label>
-                    <input
-                        id="weight"
-                        type="text"
-                        placeholder="60" />
-                </div>
 
                 <div class="input-wrapper">
                     <label for="height">Altura (cm)</label>
@@ -43,6 +36,14 @@
                         type="text"
                         placeholder="165" />
                 </div>
+
+                <div class="input-wrapper">
+                  <label for="weight">Peso (kg)</label>
+                  <input
+                      id="weight"
+                      type="text"
+                      placeholder="60" />
+              </div>
 
                 <button type="submit">
                     Calcular IMC
