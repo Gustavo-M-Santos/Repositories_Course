@@ -1,7 +1,7 @@
-import states from './start.js';
+import states from './state.js';
 
 export function toggleRunning() {
-states.isRunning = document.documentElement.classList.toggle('running');
+  states.isRunning = document.documentElement.classList.toggle('running');
 }
 
 export function reset() {
@@ -12,8 +12,8 @@ export function reset() {
 export function set() {
 
 }
+
 export function toggleMusic() {
   states.isMute = document.documentElement.classList.toggle('music-on');
-
 }
 
