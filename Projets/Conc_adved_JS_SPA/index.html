@@ -6,44 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SPA</title>
 </head>
-<style>
-  body {
-    background-color:#4B0082;
-  }
-  a {
-    color:#FFF
-  }
-</style>
-<body >
-  <nav>
-    <a href="./" onclick="route()">Home</a>
-    <a href="/about" onclick="route()">Sobre</a>
-    <a href="/contato" onclick="route()">Contact</a>
-    <a href="/404" onclick="route()">404</a>
+<body>
+   <nav>
+    <a href="/Projets/Conc_adved_JS_SPA/" onclick="route()">Home</a>
+    <a href="/Projets/Conc_adved_JS_SPA/pages/about.html" onclick="route()">Sobre</a>
+    <a href="/Projets/Conc_adved_JS_SPA/pages/contact.html" onclick="route()">Contact</a>
+    <a href="/Projets/Conc_adved_JS_SPA/pages/404.html" onclick="route()">404</a>
   </nav>
 
   <div id="app"></div>
 
   <script>
+
     const routes = {
-      "/": "/page/home.html",
-      "/about": "/page/about.index.html",
-      "/contato": "/page/contato.index.html",
-      404: "/page/404.index.html",
+      "/Projets/Conc_adved_JS_SPA/": "/Projets/Conc_adved_JS_SPA/pages/home.html",
+      "/Projets/Conc_adved_JS_SPA/pages/about.html": "/Projets/Conc_adved_JS_SPA/pages/about.html",
+      "/Projets/Conc_adved_JS_SPA/pages/contact.html": "/Projets/Conc_adved_JS_SPA/pages/contact.html",
+      404: "/Projets/Conc_adved_JS_SPA/pages/404.html",
     }
 
     function route(event) {
       event = event || window.event
       event.preventDefault()
 
-      window.history.pushState({},"",event.target.href)
+      window.history.pushState({}, "", event.target.href)
 
       handle()
     }
 
-    function handle()  {
-      const {pathname } = window.location
-      console.log(pathname);
+    function handle() {
+      const { pathname }  = window.location
+      const route = routes[pathname] || routes[404]
+      console.log('antes do fetch')
+      fetch(route)
+      .then(data => console.log(data))
+      // .then(html => console.log(html))
+
+
+      console.log(route)
     }
   </script>
 </body>
