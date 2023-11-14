@@ -1,4 +1,4 @@
-<!--?  Single Page Application (SPA)  -->
+**Single Page Application**
 
   Durante uma aplicação existe uma comunião entre o nosso cliente(Front-End) e o
 servidor(Back-End), one o nosso cliente manda um pedido e o servidor mando o resultado
@@ -18,3 +18,27 @@ do nosso pedido.
   que acontece é a comunicação dos dub-aplicativos que rodam no front e back end
   pois o sub-aplicativo do back pega os dados e envia  para o sub-aplicativo do front
   que atualiza apenas o dados necessários
+
+**Desestruturação**
+  Quando vamos buscar um determinado tipo e dato no JS, uma forma mais pratica é
+fazer a desestruturação quando vamos lançar em uma variável
+
+  Quando fazemos isso estamos dizendo que, tem um dado que chama pathname, e ira
+buscar esse dado e o nome da variável é essa função
+```javascript
+
+<!--* Forma simples -->
+  const pathname = window.location.pathname
+  const href = window.location.href
+  const host = window.location.host
+  const port = window.location.port
+
+<!--* Forma desestruturada-->
+  const { pathname } = window.location.pathname
+  const { href } = window.location.href
+  const { host } = window.location.host
+  const { port } = window.location.port
+
+<!--* Forma desestruturada resumida-->
+  const {pathname, href, host, port} = window.location.pathname
+```

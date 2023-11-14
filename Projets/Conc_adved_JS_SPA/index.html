@@ -16,7 +16,7 @@
 </style>
 <body >
   <nav>
-    <a href="/." onclick="route()">Home</a>
+    <a href="./" onclick="route()">Home</a>
     <a href="/about" onclick="route()">Sobre</a>
     <a href="/contato" onclick="route()">Contact</a>
     <a href="/404" onclick="route()">404</a>
@@ -25,9 +25,25 @@
   <div id="app"></div>
 
   <script>
+    const routes = {
+      "/": "/page/home.html",
+      "/about": "/page/about.index.html",
+      "/contato": "/page/contato.index.html",
+      404: "/page/404.index.html",
+    }
+
     function route(event) {
       event = event || window.event
       event.preventDefault()
+
+      window.history.pushState({},"",event.target.href)
+
+      handle()
+    }
+
+    function handle()  {
+      const {pathname } = window.location
+      console.log(pathname);
     }
   </script>
 </body>
