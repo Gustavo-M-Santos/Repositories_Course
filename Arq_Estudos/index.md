@@ -638,3 +638,10 @@ não ira permitir fechar o portão caso ao contrario ira deixar mexer no portão
     `ceil()` Arendonda o numero para Cima
     `floor()` Aredenda o numero para para baixo
     `round()` Arredonda tanto para cima quanto para baixo, dividino o numero entre meio
+
+
+
+<!--! DOM -->
+
+ `preventDefault()`
+  Quando não queremos que determinado evento por padrão aconteça, como abrir um link ou enviar formulari, utiluzamos esse comando. geralmente usado dentro de uma função ao qual é passada para algum item que tenha evento.
