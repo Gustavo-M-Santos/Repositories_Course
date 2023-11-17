@@ -1,31 +1,14 @@
+import { Router } from "./router.js";
 
-const routes = {
-  "/Projets/Conc_adved_JS_SPA/": "/Projets/Conc_adved_JS_SPA/pages/home.html",
-  "/Projets/Conc_adved_JS_SPA/pages/about.html": "/Projets/Conc_adved_JS_SPA/pages/about.html",
-  "/Projets/Conc_adved_JS_SPA/pages/contact.html": "/Projets/Conc_adved_JS_SPA/pages/contact.html",
-  404: "/Projets/Conc_adved_JS_SPA/pages/404.html",
-}
+const router = new Router();
 
-function route(event) {
-  event = event || window.event
-  event.preventDefault()
+router.add("/Projets/Conc_adved_JS_SPA/", "/Projets/Conc_adved_JS_SPA/pages/home.html")
+router.add("/Projets/Conc_adved_JS_SPA/pages/about.html", "/Projets/Conc_adved_JS_SPA/pages/about.html")
+router.add("/Projets/Conc_adved_JS_SPA/pages/contact.html", "/Projets/Conc_adved_JS_SPA/pages/contact.html")
+router.add(404, "/Projets/Conc_adved_JS_SPA/pages/404.html")
 
-  window.history.pushState({}, "", event.target.href)
+router.handle()
+window.onpopstate = () => router.handle()
+window.route = () => router.route()
 
-  handle()
-}
 
-function handle() {
-  const { pathname }  = window.location
-  const route = routes[pathname] || routes[404]
-  fetch(route)
-  .then(data => data.text())
-  .then(html => {
-    document.querySelector('#app').innerHTML = html
-  })
-}
-
-handle()
-
-window.onpopstate = () => handle()
-window.route = ( ) => route()
