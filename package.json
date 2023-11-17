@@ -1,0 +1,16 @@
+{
+  "name": "repositories_course",
+  "version": "1.0.0",
+  "description": "Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocketseat's. No curso estudo os fundamentos do Front-End e Back-End, até os tópicos avançados que um Dev Full-Stack deve aprender para a solução para a sua jornada de trabalhos.",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
+
