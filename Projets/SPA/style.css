@@ -68,7 +68,9 @@ nav a:hover {
   margin: 17.2rem 0 2.4rem;
 }
 
-.conteiner1 button {
+.conteiner1 a {
+  text-decoration: none;
+
   padding: 1.2rem 3.2rem;
 
   background: none;
@@ -87,7 +89,7 @@ nav a:hover {
   transition: .5s;
 }
 
-.conteiner1 button:hover {
+.conteiner1 a:hover {
   color: var(--bg-color-blue);
   background-color: var(--text-color-white-100);
   padding: 1.6rem 3.6rem;
