@@ -94,31 +94,31 @@ Scroll
 
 `overflow-y:`
 
-  Essa propriedade vaideterminar se eu quero que o scroll
-do mause seja aplicado apenas em um elemento.
-  Exemplo de quando quero que o conteudo fique no MAIN, e o
-FOOTER e HAEDER fiquem fixos, então eu adiciono mais conteudos
+  Essa propriedade vai determinar se eu quero que o scroll
+do mouse seja aplicado apenas em um elemento.
+  Exemplo de quando quero que o conteúdo fique no MAIN, e o
+FOOTER e HEADER fiquem fixos, então eu adiciono mais conteúdos
 apena no Main
 
 
-Variaveis
+Variáveis
 
 `--` <!--? Criação da variavel  -->
 `var()` <!--? Solicitação da variavel-->
 
-  As vvariaveis elas sevem parapodermos colocar determinados
-valoeres que seram reutilizados, como cores de base por exemplo.
+  As variáveis elas sevem para podermos colocar determinados
+valores que serão reutilizados, como cores de base por exemplo.
 
     <!-- * Exemplo -->
       <!-- ? Criando as variabveis -->
         --base-color-blue:#0000ff;
-        --boder-red-50: 50px solid red ;
+        --border-red-50: 50px solid red ;
 
       <!--? Solicitando as variaveis -->
 
         div {
           background-color: var(--base-color-blue) ;
-          boder:var(--boder-red-50);
+          border:var(--border-red-50);
         }
 
 
