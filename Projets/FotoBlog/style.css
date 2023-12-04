@@ -132,7 +132,7 @@ main h1 {
 
   /* transition-property:filter, transform ;
   transition-property:all;
-  transition-duration: 5s;
+  transition-duration: 500ms;
   transition-delay: ease-in-out; */
 
   transition: all 500ms ease-in-out;
