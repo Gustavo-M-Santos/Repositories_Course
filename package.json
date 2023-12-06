@@ -7,7 +7,7 @@
     "start": "lite-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gustavo M santos",
   "license": "ISC",
   "dependencies": {
     "lite-server": "^2.6.1"
