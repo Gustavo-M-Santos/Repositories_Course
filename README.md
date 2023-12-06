@@ -1,9 +1,8 @@
+# Repositório do Curso "Explore" - Rocketseat
 
-# Repositório de Curso
+Bem-vindo ao repositório do curso Explore da Rocketseat. Aqui, você encontrará projetos desenvolvidos ao longo do curso, abrangendo desde os fundamentos do Front-End até tópicos avançados essenciais para um Desenvolvedor Full-Stack.
 
-Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocketseat's. No curso estudo os fundamentos do Front-End e Back-End, até os tópicos avançados que um Dev Full-Stack deve aprender para a solução para a sua jornada de trabalhos.
-
-## 🛠 Tecnologias foram estudadas no curso
+## 🛠 Tecnologias Estudadas no Curso
 
 - HTML 5
 - CSS
@@ -13,6 +12,15 @@ Nesse arquivo está projetos que fiz ao longo do curso Explore, da escola Rocket
 - GitHub
 - Node.js
 
-## O que é o Index primário.
+## Sobre o Projeto Principal - Index
 
-Nesse primeiro index é um site que está em processo de desenvolvimento. Nele encontrará todos os projetos que aprendi durante a jornada dp curso, aplicando todas as tecnologias citadas anteriormente, tanto para o Front-end quanto para Back-end.
+O Index primário é um site atualmente em desenvolvimento. Ele servirá como o ponto central que reúne todos os projetos aprendidos durante a jornada do curso. Este projeto incorpora todas as tecnologias mencionadas anteriormente, tanto para o desenvolvimento Front-End quanto Back-End.
+
+**Objetivo do Projeto:**
+- Consolidar e aplicar os conhecimentos adquiridos ao longo do curso.
+- Demonstrar habilidades em HTML, CSS, JavaScript, SQLite, Git, GitHub e Node.js.
+- Criar uma solução integrada para enfrentar desafios comuns em trabalhos Full-Stack.
+
+Fique à vontade para explorar os diretórios e projetos disponíveis neste repositório. Qualquer feedback é apreciado, e esperamos que este repositório seja útil para aprimorar suas habilidades como desenvolvedor.
+
+**Agradecemos por acompanhar nossa jornada de aprendizado!**
